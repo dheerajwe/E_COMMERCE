@@ -32,4 +32,4 @@ const CartTotal = () => {
   )
 }
 
-export default CartTotal
+export default CartTotal;
