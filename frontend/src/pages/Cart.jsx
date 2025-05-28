@@ -10,7 +10,7 @@ const Cart = () => {
   const { products, currency, cartItems, updateQuantity, navigate, token } =
     useContext(ShopContext);
   const [cartData, setCartData] = useState([]);
-  // const navigate = useNavigate();
+ 
 
   useEffect(() => {
     if (products.length > 0) {

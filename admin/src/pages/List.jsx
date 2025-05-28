@@ -55,7 +55,6 @@ const List = ({ token }) => {
           <b>Price</b>
           <b className="text-center">Action</b>
         </div>
-        {/* Product list */}
         {list.map((item, index) => (
           <div
             key={index}
