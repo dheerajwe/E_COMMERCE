@@ -25,7 +25,7 @@ const Best = () => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Necessitatibus, dolores mollitia! Dolor, ipsam voluptates error
           expedita, ex provident, quae laborum explicabo ab quis labore
-          temporibus exercitationem. Reprehenderit alias quisquam quae!
+          temporibus exetationem. Reprehenderit alias quisquam quae!
         </p>
       </div>
 
