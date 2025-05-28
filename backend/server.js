@@ -21,7 +21,11 @@ ConnectCloudinary();
 
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://e-commerce-q3pe.vercel.app'],
+    origin: [
+        'http://localhost:5173',
+        'https://e-commerce-q3pe.vercel.app',
+        'https://e-commerce-ev3p.vercel.app'
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'token'],
     credentials: true,
