@@ -103,8 +103,7 @@ const ShopContextProvider = (props) => {
 
   const getProductsData = async () => {
     try {
-      const response = await axios.get(backendUrl + "/list");
-      // console.log(response);
+      const response = await axios.get(`${backendUrl}/list`);
       if (response.data.success) {
         setProducts(response.data.products);
       } else {
@@ -118,7 +117,7 @@ const ShopContextProvider = (props) => {
 
   const getUserCart = async () => {
     try {
-      const response = await axios.get(backendUrl + "/get", {
+      const response = await axios.get(`${backendUrl}/get`, {
         headers: { token },
       });
 

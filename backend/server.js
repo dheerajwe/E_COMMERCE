@@ -20,8 +20,14 @@ ConnectCloudinary();
 // middlewares //
 
 app.use(express.json());
-app.use(cors());
-app.use(cors({ origin: "*" }))
+app.use(cors({
+    origin: ['http://localhost:5173', 'https://your-frontend-domain.com'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'token'],
+    credentials: true,
+    preflightContinue: false,
+    optionsSuccessStatus: 204
+}));
 
 // api endpoints //
 app.use("/",userRoute);
